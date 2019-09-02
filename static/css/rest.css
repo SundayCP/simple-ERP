@@ -1,0 +1,242 @@
+/*初始化样式*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+ol, ul {
+  list-style: none
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+@charset "utf-8";
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  display: inline-block;
+  -webkit-appearance: none;
+  border: none;
+  padding: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "PingFang SC", "Heiti SC", Helvetica, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  -webkit-touch-callout: none
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+.clearfix {
+  display: block;
+  zoom: 1
+}
+
+.clear {
+  clear: both;
+  font-size: 0;
+  line-height: 0
+}
+
+/*字体图标*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?55ykeo');
+  src:  url('../fonts/icomoon.eot?55ykeo#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?55ykeo') format('truetype'),
+  url('../fonts/icomoon.woff?55ykeo') format('woff'),
+  url('../fonts/icomoon.svg?55ykeo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ympz:before {
+  content: "\e900";
+}
+.icon-yhgl:before {
+  content: "\e901";
+}
+.icon-yewu:before {
+  content: "\e902";
+}
+.icon-shouru:before {
+  content: "\e903";
+}
+.icon-shouquan:before {
+  content: "\e904";
+}
+.icon-shezhi:before {
+  content: "\e905";
+  color: #1890ff;
+}
+.icon-shanchu:before {
+  content: "\e906";
+}
+.icon-jifen:before {
+  content: "\e907";
+}
+.icon-jiesuan:before {
+  content: "\e908";
+}
+.icon-ddzx:before {
+  content: "\e909";
+}
+.icon-bianji:before {
+  content: "\e90a";
+  color: #1890ff;
+}
+
+
+/*公共样式*/
+.page-title {
+  background-color: #f0f2f5;
+  padding-bottom: 22px;
+  padding-top: 23px;
+  font-size: 12px;
+  color: #959595;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.container, .user-management, .account-manage,.role-management, .set-discount, .withdrawal-list,.ticket-list,
+.money-record, .ant, .financial-details, .authorized-area, .quota,
+.classify-category, .details-category, .home-category, .page-activity, .general-income,
+.complain, .order-statistics, .order-form, .add-role, .add-user, .add-ant, .edit-discount,.area-statistics,.telecom-data,.zfb-check,.total-account{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.container {
+  padding: 97px 40px 0;
+  overflow-y: auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.el-table th {
+  background-color: #fbfbfb!important;
+  color: rgba(0, 0, 0, 0.85);
+}
+.el-form-item__label{
+  padding: 0!important;
+}
+
+.el-table tbody {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color: #8b8b8b;
+  font-size: 14px;
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #8b8b8b;
+  font-size: 14px;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #8b8b8b;
+  font-size: 14px;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #8b8b8b;
+  font-size: 14px;
+}
+
+.pagination-box {
+  float: right;
+  margin: 20px 0;
+}
+
+.el-table__row:hover {
+  /*background-color: #3a8ee6;*/
+}
+
+.operation-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.operation-btn:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+}
